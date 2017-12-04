@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      favFood: ['icecream', 'kabab', 'apple']
+      favFood: ['icecream', 'kabab', 'apple', 'meatballs']
     }
   }
 
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     let favFoods =this.state.favFood.map((elm, index) => {
       return (
-        <h2 key= {index} > {elm}</h2>
+        <h2> {elm}</h2>
       )
     })
     return (
